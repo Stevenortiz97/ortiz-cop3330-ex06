@@ -36,23 +36,18 @@ public class App {
     private static int ageint(){
         System.out.print("What is your current age? ");
         String agestring = in.nextLine();
-        int ageint = Integer.parseInt(agestring);
-        return ageint;
+        return Integer.parseInt(agestring);
     }
     private static int retireageint() {
         System.out.print("At what age would you like to retire? ");
         String retireagestring = in.nextLine();
-        int retireageint = Integer.parseInt(retireagestring);
-        return retireageint;
+        return Integer.parseInt(retireagestring);
     }
 
     private static int currentDate(){
 
         LocalDate currentDate = LocalDate.now();
-
-        int yearint = currentDate.getYear();
-
-        return yearint;
+        return currentDate.getYear();
     }
 
 }
